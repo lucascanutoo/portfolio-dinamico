@@ -12,3 +12,8 @@ class ProjetoCreate(ProjetoBase):
 class ProjetoOut(ProjetoBase):
     id: int
     model_config = ConfigDict(from_attributes=True)
+
+class ProjetoUpdate(BaseModel):
+    nome: str | None = None
+    descricao: str | None = None
+    url: str | None = None
