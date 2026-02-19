@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from app.db.database import engine, Base
 from app.routers.projetos import router
-from app.models import User, Projeto, Perfil
+from app import models
 
 app = FastAPI()
 
