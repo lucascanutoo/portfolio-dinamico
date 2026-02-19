@@ -1,7 +1,11 @@
 from fastapi import FastAPI
 from app.db.database import engine, Base
 from app.routers.projetos import router
+<<<<<<< HEAD
 from app.routers import projetos, perfil
+=======
+from app import models
+>>>>>>> 1088c6865ef90686e98ceadf13736865afc6f362
 
 app = FastAPI()
 
